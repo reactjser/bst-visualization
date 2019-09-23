@@ -1,22 +1,29 @@
-.App {
-  text-align: center;
+svg {
+  /*background:gray;*/
+  display: block;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
+.node circle {
+  fill: #fff;
+  stroke: rgb(51, 51, 51);
+  stroke-width: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.node text {
+  font: 12px sans-serif;
 }
 
-.App-link {
-  color: #09d3ac;
+.link {
+  fill: none;
+  stroke: rgb(51, 51, 51);
+  stroke-width: 2px;
+}
+
+.hidden {
+  stroke: rgba(0, 0, 0, 0);
+}
+.node.hidden {
+  fill: rgba(0, 0, 0, 0) !important;
+  stroke: rgba(0, 0, 0, 0);
 }
